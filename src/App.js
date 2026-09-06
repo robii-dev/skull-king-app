@@ -733,7 +733,7 @@ const SkullKingClient = Client({
   game: SkullKingGame,
   board: SkullKingBoard,
   numPlayers: 4,
-  multiplayer: SocketIO({ server: 'localhost:8000' }),
+  multiplayer: SocketIO({ server: 'https://skull-king-server-k7ms.onrender.com' }),
 });
 
 function EcranSelectionJoueur(props) {
@@ -823,7 +823,7 @@ const SpectatorClient = Client({
   game: SkullKingGame,
   board: EcranSelectionJoueur,
   numPlayers: 4,
-  multiplayer: SocketIO({ server: 'localhost:8000' }),
+  multiplayer: SocketIO({ server: 'https://skull-king-server-k7ms.onrender.com' }),
 });
 
 function EcranAccueil() {
